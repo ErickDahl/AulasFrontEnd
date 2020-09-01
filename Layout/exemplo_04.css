@@ -1,0 +1,73 @@
+
+html, body {
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.container {
+    /* 4 linhas e 6 colunas */
+
+    display: grid;
+    grid-template-rows: 10vh 40vh calc(40vh - 45px) 10vh;  /*Aqui eu passo a altura da linha*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: "h  h  h  h  h h"
+                         "a me me md md s"
+                         "a m1 m2 m3 m4 s"
+                         "f f  f  f  f  f";
+    /* grid-row-gap: 15px;
+    grid-column-gap: 15px; */
+    grid-gap: 15px;
+}
+
+div.header {
+    background-color: yellow;
+    grid-area: h;
+}
+
+div.aside {
+    background-color: green;
+    grid-area: a;
+}
+div.section {
+    background-color: blueviolet;
+    grid-area: s;
+}
+
+div.footer {
+    background-color: brown;
+    grid-area: f;
+}
+
+/* Aqui a magia acontece ...  */
+
+div.main-esquerda {
+    background-color: #343434;
+    grid-area: me;
+}
+
+div.main-direita {
+    background-color: #343434;
+    grid-area: md;
+}
+
+div.main-1 {
+    background-color: #343434;
+    grid-area: m1;
+}
+div.main-2 {
+    background-color: #343434;
+    grid-area: m2;
+}
+
+div.main-3 {
+    background-color: #343434;
+    grid-area: m3;
+}
+
+div.main-4 {
+    background-color: #343434;
+    grid-area: m4;
+}

@@ -95,7 +95,5 @@
     function mostrarAlerta(){
         alerta.classList.remove('esconder');
     }
-
-
 })();
 

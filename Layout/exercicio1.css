@@ -1,0 +1,72 @@
+
+html, body {
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.container {
+    /* 4 linhas e 4 colunas */
+
+    display: grid;
+    grid-template-rows: 10vh 40vh calc(40vh - 45px) 10vh;  /*Aqui eu passo a altura da linha*/
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+
+    grid-template-areas: "h  h  h  h"
+                         "m m1 m2 m3"
+                         "m m4 m5 m6"
+                         "f  f  f  f";
+    /* grid-row-gap: 15px;
+    grid-column-gap: 15px; */
+    grid-gap: 15px;
+}
+
+div.header {
+    background-color: yellow;
+    grid-area: h;
+}
+
+div.footer {
+    background-color: brown;
+    grid-area: f;
+}
+
+/* Aqui a magia acontece ...  */
+
+div.main {
+    background-color: #343434;
+    grid-area: m;
+    margin-left: 15px;
+}
+
+div.main-1 {
+    background-color: #343434;
+    grid-area: m1;
+}
+div.main-2 {
+    background-color: #343434;
+    grid-area: m2;
+}
+
+div.main-3 {
+    background-color: #343434;
+    grid-area: m3;
+    margin-right: 15px;
+}
+
+div.main-4 {
+    background-color: #343434;
+    grid-area: m4;
+}
+
+div.main-5 {
+    background-color: #343434;
+    grid-area: m5;
+}
+
+div.main-6 {
+    background-color: #343434;
+    grid-area: m6;
+    margin-right: 15px;
+}

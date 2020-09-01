@@ -1,0 +1,53 @@
+
+html, body {
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.container {
+    /* 4 linhas e 3 colunas */
+
+    display: grid;
+    grid-template-rows: 10vh 40vh calc(40vh - 45px) 10vh;  /*Aqui eu passo a altura da linha*/
+    grid-template-columns: 1fr 3fr 1fr;
+
+    grid-template-areas: "h h h"
+                         "a mc s"
+                         "a mb s"
+                         "f f f";
+    /* grid-row-gap: 15px;
+    grid-column-gap: 15px; */
+    grid-gap: 15px;
+}
+
+div.header {
+    background-color: yellow;
+    grid-area: h;
+}
+
+div.aside {
+    background-color: green;
+    grid-area: a;
+}
+div.section {
+    background-color: blueviolet;
+    grid-area: s;
+}
+
+div.main-cima {
+    background-color: #343434;
+    grid-area: mc;
+}
+
+div.main-baixo {
+    background-color: #343434;
+    grid-area: mb;
+}
+
+div.footer {
+    background-color: brown;
+    grid-area: f;
+}
+

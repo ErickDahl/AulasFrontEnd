@@ -1,0 +1,150 @@
+html, body {
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    height: 100%;
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: "l1 b"
+                         "i1 b"
+                         "l2 b"
+                         "i2 b";
+
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: 100px;
+}
+
+.painel{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-areas: "p1 p2 p3"
+                         "p4 p5 p6"
+                         "p7 p8 p9";
+
+    grid-gap: 7px;
+    justify-content: center;
+    align-content: center;
+}
+
+.rodape{
+    text-align: center;
+    color: white;
+}
+
+.footer{
+    grid-area: f;
+}
+
+.p1{
+    grid-area: p1;
+    background-color: green;
+    margin-left: 100px;
+}
+.p2{
+    grid-area: p2;
+    background-color: green;
+}
+.p3{
+    grid-area: p3;
+    background-color: green;
+    margin-right: 100px;
+}
+.p4{
+    grid-area: p4;
+    background-color: green;
+    margin-left: 100px;
+}
+.p5{
+    grid-area: p5;
+    background-color: green;
+}
+.p6{
+    grid-area: p6;
+    background-color: green;
+    margin-right: 100px;
+}
+.p7{
+    grid-area: p7;
+    background-color: green;
+    margin-left: 100px;
+}
+.p8{
+    grid-area: p8;
+    background-color: green;
+}
+.p9{
+    grid-area: p9;
+    background-color: green;
+    margin-right: 100px;
+}
+
+.painel > div:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.usuario1{
+    grid-area: i1;
+    background-color: black;
+    color: white;
+    margin-left: 140px;
+    border: 1px solid green;
+}
+
+.usuario2{
+    grid-area: i2;
+    background-color: black;
+    color: white;
+    margin-left: 140px;
+    border: 1px solid green;
+}
+
+.label1{
+    grid-area: l1;
+    margin-left: 100px;
+    color: white;
+}
+
+.label2{
+    grid-area: l2;
+    margin-left: 100px;
+    color: white;
+}
+
+#botao{
+    grid-area: b;
+    margin-right: 300px;
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    border: 0;
+   
+}
+
+#botao:hover{
+    background-color: darkgreen;
+}

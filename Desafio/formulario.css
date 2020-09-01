@@ -1,0 +1,67 @@
+html, body{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.formulario{
+    margin-top: 100px;
+    display: grid;
+    width: 40%;
+    height: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 2fr 1fr;
+    grid-template-areas: "p"
+                         "e"
+                         "o"
+                         "r";
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 2vh;
+}
+
+.largura{
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-gap: 10px;
+    border-collapse: collapse;
+}
+
+.pessoal{
+    margin-top: 10vh;
+    padding: 2vh;
+    display: grid;
+    border: 1px solid black;
+    grid-template-areas: p;
+    border-collapse: collapse;
+}
+
+.endereco{
+    display: grid;
+    padding-top: 10vh;
+    border: 1px solid black;
+    grid-template-areas: e;
+    border-collapse: collapse;
+}
+
+.outro{
+    display: grid;
+    padding-top: 10vh;
+    border: 1px solid black;
+    grid-template-areas: o;
+    border-collapse: collapse;
+}
+
+.rodape{
+    display: grid;
+    padding-top: 12vh;
+    border: 1px solid black;
+    grid-template-areas: r;
+    border-collapse: collapse;
+}
