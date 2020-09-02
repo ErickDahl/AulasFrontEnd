@@ -1,0 +1,17 @@
+.title, #btn-adcionar-usuario {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#modal-adicionar-usuario .modal-dialog{
+    max-width: 840px;
+}
+
+table.table{
+    border: 1px solid #ddd;
+}
+
+div.acoes {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}

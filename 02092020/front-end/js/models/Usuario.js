@@ -6,12 +6,12 @@ class Usuario {
         this.id = obj.id;
         this.nome = obj.nome;
         this.sobrenome = obj.sobrenome;
-        this.tipo = obj.tipo;
-        this.status =  this.retornarStatus(obj.status)
+        this.funcao = obj.funcao;
+        this.status =  this._retornarStatus(obj.status)
         this.email = obj.email;
     }
 
-    retornarStatus(status){
+    _retornarStatus(status){
         switch (status) {
             case 'Ativado': return true;
             case 'Desativado': return false;
@@ -22,7 +22,7 @@ class Usuario {
     }
 
     modeloValido(){
-        return !!(this.nome && this.sobrenome && this.email && this.tipo);
+        return !!(this.nome && this.sobrenome && this.email && this.funcao);
     }
 }
 

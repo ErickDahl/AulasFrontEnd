@@ -15,7 +15,7 @@ var mensagem = (() =>{
             
             
             textAlign: 'left',  // Text alignment i.e. left, right or center
-            loader: true,  // Whether to show loader or not. True by default
+            loader: false,  // Whether to show loader or not. True by default
             loaderBg: '#9EC600',  // Background color of the toast loader
             beforeShow: function () {}, // will be triggered before the toast is shown
             afterShown: function () {}, // will be triggered after the toat has been shown

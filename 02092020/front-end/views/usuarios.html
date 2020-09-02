@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aprendendo fazer requisição</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/jquery.toast.css">
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/usuarios.css">
+  <link rel="stylesheet" href="../css/jquery.toast.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/usuarios.css">
 </head>
 
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark">
 
       <a class="navbar-brand" href="#">Serratec</a>
 
@@ -59,8 +59,7 @@
 
     <div class="row">
       <div class="col-sm-3">
-        <button id="btn-adcionar-usuario" class="btn btn-primary" data-toggle="modal"
-          data-target="#modal-adicionar-usuario" data-backdrop="static">Adicionar usuário</button>
+        <button id="btn-adcionar-usuario" class="btn btn-primary" data-backdrop="static">Adicionar usuário</button>
       </div>
     </div>
 
@@ -72,19 +71,19 @@
               <th>Id</th>
               <th>Nome</th>
               <th>Sobrenome</th>
-              <th>Tipo</th>
-              <th>Status</th>
+              <th>Função</th>
+              <th>Email</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
-            
+
           </tbody>
         </table>
       </div>
     </div>
 
-    <!-- The Modal -->
+    <!-- Modal Controle -->
     <div class="modal" id="modal-adicionar-usuario">
 
       <div class="modal-dialog">
@@ -101,7 +100,6 @@
 
           <!-- Modal body -->
           <div class="modal-body">
-
             <form autocomplete="off">
 
               <div class="row">
@@ -121,7 +119,7 @@
 
                 <div class="col-sm-4">
                   <div class="form-group">
-                    <label for="tipo-usuario">Tipo</label>
+                    <label for="tipo-usuario">Função</label>
                     <select class="form-control" id="tipo-usuario">
                       <option>Administrador</option>
                       <option>Gerente</option>
@@ -151,17 +149,24 @@
                 </div>
               </div>
             </form>
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button id="btn-salvar-usuario" type="button" class="btn btn-primary" >Salvar</button>
-              <button id="btn-cancelar-usuario" type="button" class="btn btn-outline-primary"
-                data-dismiss="modal">Cancelar</button>
-            </div>
-
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button id="btn-salvar-usuario" type="button" class="btn btn-primary">Salvar</button>
+            <button id="btn-cancelar-usuario" type="button" class="btn btn-outline-primary"
+              data-dismiss="modal">Cancelar</button>
           </div>
         </div>
       </div>
+
+    </div>
+
+
+    <!--Modal Mensagem -->
+    <div class="modal" id="modal-mensagem">
+
+    </div>
+
   </main>
 
 
@@ -170,12 +175,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="./js/plugins/jquery.toast.js"></script>
-  
-  <script src="./js/plugins/toast-alert.js"></script>
-  <script src="./js/models/Usuario.js"></script>
-  <script src="./js/api/api-usuarios.js"></script>
-  <script src="./js/usuarios.js"></script>
+  <script src="../js/plugins/jquery.toast.js"></script>
+
+  <script src="../js/plugins/toast-alert.js"></script>
+  <script src="../js/models/Usuario.js"></script>
+  <script src="../js/api/api-usuarios.js"></script>
+  <script src="../js/usuarios.js"></script>
 </body>
 
 </html>

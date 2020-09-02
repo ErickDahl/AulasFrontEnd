@@ -3,7 +3,7 @@ const listaUsuarios = [
         id:1,
         nome:"Fulano",
         sobrenome: "Candongas",
-        tipo: "GERENTE",
+        funcao: "Gerente",
         status: true,
         email: "fulano@fulano.com"
     },
@@ -11,7 +11,7 @@ const listaUsuarios = [
         id:2,
         nome:"Ciclano",
         sobrenome: "Candongas",
-        tipo: "GERENTE",
+        funcao: "Gerente",
         status: true,
         email: "ciclano@ciclano.com"
     }

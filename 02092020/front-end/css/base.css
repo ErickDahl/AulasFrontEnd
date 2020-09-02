@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,500;1,700&display=swap');
+
+:root {
+    --color-primary:#023EAD;
+    --color-secondary:#012770;
+    --color-font: #fff;
+    --color-title:#767676;
+}
+
+html,body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto','Open Sans', sans-serif;
+}
+
+
+.btn.btn-outline-primary,
+.btn.btn-primary {
+    min-width: 90px;
+}
+
+.title {
+    color: var(--color-title);
+}
+
+.btn-primary{
+    background-color: var(--color-primary);
+    color: var(--color-font);
+}
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active {
+    color: var(--color-font);
+    background-color: var(--color-secondary);
+}
+
+.btn-secondary{
+    background-color: var(--color-secondary);
+    color: var(--color-font);
+}
+
+.btn-outline-primary {
+    color:var(--color-primary);
+    border-color: var(--color-primary);
+}
+.btn-outline-primary:hover {
+    color: var(--color-font);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.navbar.navbar-expand-sm.navbar-dark,
+.modal-header,
+.modal-header{
+    background-color: var(--color-primary);
+    color: var(--color-font);
+}
+
+button.close{
+    color: var(--color-font);
+}
+button.close:hover,
+button.close:focus{
+    color: var(--color-font);
+}
+
+#modal-mensagem .modal-dialog{
+    max-width: 500px;
+    margin-top: 150px;
+    width: 400px;
+    text-align: center;
+    padding: 25px;
+}
+
